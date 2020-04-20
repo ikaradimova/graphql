@@ -18,6 +18,10 @@ const GameSchema = new Schema({
     price: {
         type: Number,
         required: true
+    },
+    company: {
+        type: String,
+        required: true
     }
 });
 

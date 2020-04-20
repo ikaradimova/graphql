@@ -5,6 +5,7 @@ export default `
         description: String!
         imageUrl: String!
         price: Float!
+        company: String!
     }
 
     type Query {
@@ -13,8 +14,8 @@ export default `
     }
 
     type Mutation {
-        addGame(name: String!, description: String!, imageUrl: String!, price: Float!): Game
+        addGame(name: String!, description: String!, imageUrl: String!, price: Float!, company: String!): Game
         deleteGame(_id: String!): Game
-        editGame(_id: String!, name: String, description: String, imageUrl: String, price: Float): Game
+        editGame(_id: String!, name: String, description: String, imageUrl: String, price: Float, company: String): Game
     }
 `

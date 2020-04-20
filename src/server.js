@@ -9,7 +9,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT /* || '4001' */;
+const PORT = process.env.PORT || '4001';
 const db = process.env.MONGODB_URL;
 
 mongoose.connect(db, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false}).then(() => {
