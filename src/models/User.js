@@ -3,7 +3,11 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-    username: {
+    firstname: {
+        type: String,
+        required: true
+    },
+    lastname: {
         type: String,
         required: true
     },
@@ -15,14 +19,11 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    firstname: {
-        type: String,
-        required: true
-    },
-    lastname: {
+    userType: {
         type: String,
         required: true
     }
+
 });
 
 const User = mongoose.model('User', UserSchema);
